@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 {% for task in tasks %}
-{{ task.task_name }}<br>
-{{ task.task_category }}<br>
-{{ task.description }}<br>
-{{ task.is_urgent }}<br>
-{{ task.due_date }}<br>
+<p>{{ task.task_name }}</p><br>
+<p>{{ task.task_category }}</p><br>
+<p>{{ task.description }}</p><br>
+<p>{{ task.is_urgent }}</p><br>
+<p>{{ task.due_date }}</p><br>
 {% endfor %}
 
 {% endblock %}
